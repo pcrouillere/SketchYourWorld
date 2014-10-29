@@ -7,6 +7,8 @@ Project("{627482B7-3187-9029-61B7-6096FDC1B55F}") = "SketchYourWorld", "Assembly
 EndProject
 Project("{627482B7-3187-9029-61B7-6096FDC1B55F}") = "SketchYourWorld", "Assembly-CSharp-Editor-firstpass.csproj", "{35ECBFDB-4F7D-C923-D952-D978B56D5BAE}"
 EndProject
+Project("{627482B7-3187-9029-61B7-6096FDC1B55F}") = "SketchYourWorld", "Assembly-CSharp-Editor.csproj", "{9609A409-562D-D115-A326-5FDC1927EB79}"
+EndProject
 Project("{627482B7-3187-9029-61B7-6096FDC1B55F}") = "SketchYourWorld", "Assembly-UnityScript-firstpass.unityproj", "{3C56A435-3949-9B39-875F-A301891D9593}"
 EndProject
 Project("{627482B7-3187-9029-61B7-6096FDC1B55F}") = "SketchYourWorld", "Assembly-UnityScript.unityproj", "{ED148FAC-D173-4E9E-AA82-D5091029D7EF}"
@@ -29,6 +31,10 @@ Global
 		{35ECBFDB-4F7D-C923-D952-D978B56D5BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35ECBFDB-4F7D-C923-D952-D978B56D5BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35ECBFDB-4F7D-C923-D952-D978B56D5BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9609A409-562D-D115-A326-5FDC1927EB79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9609A409-562D-D115-A326-5FDC1927EB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9609A409-562D-D115-A326-5FDC1927EB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9609A409-562D-D115-A326-5FDC1927EB79}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3C56A435-3949-9B39-875F-A301891D9593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3C56A435-3949-9B39-875F-A301891D9593}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C56A435-3949-9B39-875F-A301891D9593}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,7 +47,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
+											GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -59,4 +65,5 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
+
 EndGlobal
