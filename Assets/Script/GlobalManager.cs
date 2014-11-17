@@ -12,6 +12,7 @@ public class GlobalManager : MonoBehaviour {
 	void Awake() {
 		gManager = this;
 	}
+
 	// Use this for initialization
 	void Start () {
 	

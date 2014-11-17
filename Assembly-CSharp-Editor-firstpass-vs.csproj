@@ -110,14 +110,14 @@
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/Pauline/Documents/UTC/GI05 - A14/RV01/SketchYourWorld/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.Graphs">
- <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ <Reference Include="tk2dExternal">
+ <HintPath>C:/Users/Pauline/Documents/UTC/GI05 - A14/RV01/SketchYourWorld/Assets/TK2DROOT/tk2d/Editor/tk2dExternal.dll</HintPath>
  </Reference>
  <Reference Include="tk2dSkin">
  <HintPath>C:/Users/Pauline/Documents/UTC/GI05 - A14/RV01/SketchYourWorld/Assets/TK2DROOT/tk2d/Editor/tk2dSkin.dll</HintPath>
  </Reference>
- <Reference Include="tk2dExternal">
- <HintPath>C:/Users/Pauline/Documents/UTC/GI05 - A14/RV01/SketchYourWorld/Assets/TK2DROOT/tk2d/Editor/tk2dExternal.dll</HintPath>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
