@@ -181,14 +181,14 @@
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\AdditiveVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d_demo\democameradata\source\democamerafont.fnt" />
- <Reference Include="UnityEditor.Graphs">
- <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ <Reference Include="tk2dExternal">
+ <HintPath>C:/Users/Pauline/Documents/UTC/GI05 - A14/RV01/SketchYourWorld/Assets/TK2DROOT/tk2d/Editor/tk2dExternal.dll</HintPath>
  </Reference>
  <Reference Include="tk2dSkin">
  <HintPath>C:/Users/Pauline/Documents/UTC/GI05 - A14/RV01/SketchYourWorld/Assets/TK2DROOT/tk2d/Editor/tk2dSkin.dll</HintPath>
  </Reference>
- <Reference Include="tk2dExternal">
- <HintPath>C:/Users/Pauline/Documents/UTC/GI05 - A14/RV01/SketchYourWorld/Assets/TK2DROOT/tk2d/Editor/tk2dExternal.dll</HintPath>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

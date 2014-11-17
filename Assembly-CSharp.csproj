@@ -46,7 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\GestureHistory.cs" />
      <Compile Include="Assets\Script\GlobalManager.cs" />
+     <Compile Include="Assets\Script\ObjectBehavior.cs" />
      <Compile Include="Assets\Script\PointCloudTutorial.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCamera.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraAnchor.cs" />
