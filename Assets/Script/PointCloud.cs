@@ -1,12 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PointCloudTutorial : MonoBehaviour {
+public class PointCloud : MonoBehaviour {
 	public GameObject particule;
 	public GameObject myCube;
 	public GameObject myBridge;
 	public GameObject placeObject;
 	public bool hover=false;
+	[HideInInspector]public static PointCloud gPointCloud;
+
+	void Awake() {
+		gPointCloud = this;
+	}
 
 	void OnFingerDown( FingerDownEvent e ) 
 	{	
@@ -44,14 +49,19 @@ public class PointCloudTutorial : MonoBehaviour {
 	{
 		if (hover) {
 			particule.transform.position = GlobalManager.gManager.interfaceCamera.GetComponent<Camera>().ScreenToWorldPoint(
-				new Vector3(Input.mousePosition.x, Input.mousePosition.y, 3));
-
+				DrawHand(GameObject.Find("HandR").transform.position));
 			}
 	}
 
+	public Vector3 DrawHand(Vector3 pos){
+			Vector3 posScreen = Camera.main.WorldToScreenPoint (pos);
+			posScreen.z = 3;
+		return posScreen;
+		}
+
 	void CreateObjectDrawed(GameObject objectName) {
 		GameObject objectSpawn = (GameObject)Instantiate(objectName, new Vector3(
-			placeObject.transform.position.x, placeObject.transform.position.y+100,
+			placeObject.transform.position.x, placeObject.transform.position.y,
 			placeObject.transform.position.z), transform.rotation);
 		objectSpawn.SetActive(true);
 	}

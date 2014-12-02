@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ObjectBehavior : MonoBehaviour {
 	public bool isSelected = false;
-	public int speed = 1;
+	public float speed = 0.5F;
 
 	// Use this for initialization
 	void Start () {
@@ -44,8 +44,14 @@ public class ObjectBehavior : MonoBehaviour {
 		}
 	}
 	void OnMouseDown() {
-		Debug.Log("I have been clicked");
 		isSelected = !isSelected;
 	}
+
+	/*void OnTriggerEnter(Collider other) {
+		if (other.gameObject.name == "HandR") {
+			Debug.Log("Hand-Right touch me :( ");
+			isSelected = !isSelected;
+				}
+	}*/
 
 }

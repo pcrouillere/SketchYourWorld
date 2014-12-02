@@ -13,7 +13,9 @@ public class FGMouseInputProvider : FGInputProvider
     public string twistAxis = "Mouse ScrollWheel";
     public float twistAxisScale = 100.0f;
     public KeyCode twistKey = KeyCode.LeftControl;
-    public float twistResetTimeDelay = 0.15f;
+	//public KeyCode twistKey = SixenseButtons.TRIGGER;
+
+	public float twistResetTimeDelay = 0.15f;
 
     public KeyCode pivotKey = KeyCode.LeftAlt;
     bool pivoting = false;
@@ -35,6 +37,7 @@ public class FGMouseInputProvider : FGInputProvider
     void Start()
     {
         pinchDistance = initialPinchDistance;
+
     }
 
     void Update()
