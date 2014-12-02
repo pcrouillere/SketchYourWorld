@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_5_5;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_5;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -46,10 +46,52 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\MiddleVR\Scripts\Cluster\VRApplySharedTransform.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Cluster\VRClusterObject.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Cluster\VRShareTransform.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Interactions\VRActor.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Interactions\VRAttachToNode.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Interactions\VRElasticRepresentation.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Interactions\VRInteractionNavigationElastic.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Interactions\VRInteractionNavigationGrabWorld.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Interactions\VRInteractionNavigationWandJoystick.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Interactions\VRNavigationCollision.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Internal\VRCameraCB.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Internal\VRManagerPostFrame.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Internal\VRManagerScript.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Internal\VRRiftCamera.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Internal\VRWandInteraction.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Internal\VRWandNavigation.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Samples\VRActionSample.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Samples\VRCalibrateTracker.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Samples\VRCalibrateTrackerYaw.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Samples\VRFollowNode.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Samples\VRInteractionTest.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Samples\VRReceiveBool.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Samples\VRReceiveEvent.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Samples\VRReceiveFloat.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Samples\VRShareBool.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Samples\VRShareEvent.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Samples\VRShareFloat.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Samples\VRShortcutInvertEyes.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Samples\VRShortcutReload.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Samples\VRVirtualTrackerMapping.cs" />
+     <Compile Include="Assets\MiddleVR\Scripts\Samples\VRVirtualTrackerSimulation.cs" />
+     <Compile Include="Assets\MiddleVR_FirstPersonController\VRFPSInputController.cs" />
+     <Compile Include="Assets\MouseLookRazer.cs" />
+     <Compile Include="Assets\RayCastRazer.cs" />
      <Compile Include="Assets\Script\GestureHistory.cs" />
      <Compile Include="Assets\Script\GlobalManager.cs" />
+     <Compile Include="Assets\Script\MouseInput2.cs" />
+     <Compile Include="Assets\Script\Move.cs" />
      <Compile Include="Assets\Script\ObjectBehavior.cs" />
-     <Compile Include="Assets\Script\PointCloudTutorial.cs" />
+     <Compile Include="Assets\Script\PointCloud.cs" />
+     <Compile Include="Assets\SixenseInput\DemoScenes\Scripts\SixenseHand.cs" />
+     <Compile Include="Assets\SixenseInput\DemoScenes\Scripts\SixenseHandsController.cs" />
+     <Compile Include="Assets\SixenseInput\DemoScenes\Scripts\SixenseInputTest.cs" />
+     <Compile Include="Assets\SixenseInput\DemoScenes\Scripts\SixenseObjectController.cs" />
+     <Compile Include="Assets\SixenseInput\Scripts\SixenseInput.cs" />
+     <Compile Include="Assets\SixenseInput\Scripts\SixensePlugin.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCamera.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraAnchor.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraUtil.cs" />
@@ -160,6 +202,7 @@
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitCutoutVertexColor.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\MiddleVR\Assets\Materials\OVRLensCorrection.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Editor\EditorUtility.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\CutoutVertexColor.shader" />
@@ -176,6 +219,12 @@
      <None Include="Assets\TK2DROOT\tk2d_demo\democameradata\source\democamerafont.fnt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/Pauline/Documents/UTC/GI05 - A14/RV01/SketchYourWorld/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="MiddleVR_dotNet">
+ <HintPath>C:/Users/Pauline/Documents/UTC/GI05 - A14/RV01/SketchYourWorld/Assets/MiddleVR/MiddleVR_dotNet.dll</HintPath>
+ </Reference>
+ <Reference Include="MiddleVR_Unity3D">
+ <HintPath>C:/Users/Pauline/Documents/UTC/GI05 - A14/RV01/SketchYourWorld/Assets/MiddleVR/MiddleVR_Unity3D.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
