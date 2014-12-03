@@ -205,6 +205,7 @@
      <None Include="Assets\echoLogin\Shaders\Unlit\echoLogin-unlit-solid-10-fastest.shader" />
      <None Include="Assets\echoLogin\Shaders\xcorepass\echoLogin-xcorepass-outline-overlay-ripple.shader" />
      <None Include="Assets\echoLogin\Shaders\Light\echologin-light-fx-flashlight.shader" />
+     <None Include="Assets\license.txt" />
      <None Include="Assets\!CoreFramework_ReadMe.txt" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
      <None Include="Assets\echoLogin\Shaders\Unlit\echoLogin-unlit-fx-sun.shader" />

@@ -52,8 +52,8 @@
      <Compile Include="Assets\Script\MouseInput2.cs" />
      <Compile Include="Assets\Script\MouseLookRazer.cs" />
      <Compile Include="Assets\Script\Move.cs" />
-     <Compile Include="Assets\Script\ObjectBehavior.cs" />
      <Compile Include="Assets\Script\OutlineByReference.cs" />
+     <Compile Include="Assets\Script\PanneauScript.cs" />
      <Compile Include="Assets\Script\PointCloud.cs" />
      <Compile Include="Assets\Script\RayCastRazer.cs" />
      <Compile Include="Assets\SixenseInput\DemoScenes\Scripts\SixenseHand.cs" />
@@ -311,6 +311,7 @@
      <None Include="Assets\echoLogin\Shaders\Unlit\echoLogin-unlit-solid-10-fastest.shader" />
      <None Include="Assets\echoLogin\Shaders\xcorepass\echoLogin-xcorepass-outline-overlay-ripple.shader" />
      <None Include="Assets\echoLogin\Shaders\Light\echologin-light-fx-flashlight.shader" />
+     <None Include="Assets\license.txt" />
      <None Include="Assets\!CoreFramework_ReadMe.txt" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
      <None Include="Assets\echoLogin\Shaders\Unlit\echoLogin-unlit-fx-sun.shader" />

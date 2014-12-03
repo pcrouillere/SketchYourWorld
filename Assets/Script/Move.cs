@@ -48,7 +48,7 @@ public class Move : MonoBehaviour {
 			
 						// Apply the direction to the CharacterMotor
 						motor.inputMoveDirection = transform.rotation * directionVector;
-						motor.inputJump = SixenseInput.Controllers [1].GetButton (SixenseButtons.ONE);
+						motor.inputJump = SixenseInput.Controllers [1].GetButton (SixenseButtons.THREE);
 
 				} 		
 		//Camera.main.transform.Rotate(Vector3.up * speedRotate *  SixenseInput.Controllers[1].JoystickX  * Time.deltaTime);

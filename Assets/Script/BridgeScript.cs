@@ -13,7 +13,8 @@ public class BridgeScript : MonoBehaviour {
 	
 	}
 	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.name == "Bridge") {
+		Debug.Log ("qqchose");
+		if (other.gameObject.name=="Bridge(Clone)") {
 						Destroy (other.gameObject);
 			gameObject.GetComponent<MeshRenderer>().enabled=true;
 			gameObject.GetComponent<MeshCollider>().isTrigger=false;

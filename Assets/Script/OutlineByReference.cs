@@ -17,7 +17,7 @@ public class OutlineByReference : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (RayCastRazer.gRayCastRazer.selectedGameObject == gameObject || RayCastRazer.gRayCastRazer.onGameObject == gameObject) {
+		if (RayCastRazer.gRayCastRazer.selectedGameObject == gameObject || RayCastRazer.gRayCastRazer.onGameObject == gameObject || RayCastRazer.gRayCastRazer.viewGameObject == gameObject) {
 						ego.Outline (true);		
 				} else {
 			ego.Outline(false);
