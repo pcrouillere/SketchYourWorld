@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 4440ed0d272a24dc998227d02be0ea7b
+labels:
+- manager
+- objectpool
+- pooling
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
