@@ -1,0 +1,55 @@
+#pragma strict
+
+//-----------------------------------------------------------------------------
+class ShotBrain extends EchoGameObject
+{
+@HideInInspector
+	var targetTransform:Transform;
+@HideInInspector
+	var speed:float;
+	
+	//===========================================================================
+	function OnCollisionEnter ( col:Collision )
+	{
+		// Setting object to not active will return it to inactive pool 
+		EchoActive ( false );
+	}	
+	
+	//=========================================================================
+	// Sets up this object to start moving towards a target object
+	//=========================================================================
+	function Shoot ( istartpos:Vector3, idirection:Vector3, itargettransform:Transform, ispeed:float )
+	{
+#if !UNITY_3_5
+		if ( itargettransform.gameObject.activeSelf == false )
+			return;
+#else
+		if ( itargettransform.gameObject.active == false )
+			return;
+#endif
+	
+		EchoActive ( true );
+		cachedTransform.position		= istartpos;
+		cachedTransform.rotation		= Quaternion.LookRotation ( idirection );	
+		speed							= ispeed;
+		targetTransform					= itargettransform;
+	}
+
+	//=========================================================================
+	// makes shot home-in on target
+	//=========================================================================
+	function Update ()
+	{
+		if ( renderer.enabled )
+		{
+			var qRotation:Quaternion;
+		
+			cachedTransform.Translate ( Vector3.forward * Time.deltaTime * speed );	
+
+			qRotation = Quaternion.LookRotation ( targetTransform.position - cachedTransform.position );
+
+			cachedTransform.rotation = Quaternion.Slerp ( cachedTransform.rotation, qRotation, Time.deltaTime * 2.0f );
+		}
+	}
+}
+

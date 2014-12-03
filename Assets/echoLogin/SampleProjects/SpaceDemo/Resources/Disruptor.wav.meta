@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 93fc04fe7c08945528804fc6bac96696
+labels:
+- audio
+- song
+- echoLogin
+AudioImporter:
+  serializedVersion: 4
+  format: 0
+  quality: .360000014
+  stream: 2
+  3D: 0
+  forceToMono: 0
+  useHardware: 1
+  loopable: 1
+  userData: 
