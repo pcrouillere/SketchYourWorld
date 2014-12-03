@@ -4,6 +4,7 @@ using System.Collections;
 public class GlobalManager : MonoBehaviour {
 	//public GameObject myPerso;
 	public GameObject drawingMenu;
+	public GameObject allMenu;
 	public GameObject interfaceCamera;
 	public bool canMove = true;
 	[HideInInspector]public static GlobalManager gManager;
@@ -21,13 +22,23 @@ public class GlobalManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (SixenseInput.Controllers[1].GetButton(SixenseButtons.ONE)) {
+		if (SixenseInput.Controllers[1].GetButtonDown(SixenseButtons.ONE)) {
 			if(!drawingMenu.activeSelf) {
 				drawingMenu.SetActive(true);
 			}
 			else {
 				drawingMenu.SetActive(false);
 			}
+		}
+
+		if (SixenseInput.Controllers [1].GetButtonDown (SixenseButtons.START)) {
+			if(!allMenu.activeSelf) {
+				allMenu.SetActive(true);
+			}
+			else {
+				allMenu.SetActive(false);
+			}
+		
 		}
 	}
 
