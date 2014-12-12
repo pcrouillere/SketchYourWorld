@@ -100,6 +100,7 @@
      <None Include="Assets\echoLogin\Shaders\Transparent\echoLogin-transparent-cutout-12-discard.shader" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
      <None Include="Assets\echoLogin\Shaders\Light\echoLogin-light-transparent-05-additive.shader" />
+     <None Include="Assets\Import\Level4\_Shaders\Highlight.shader" />
      <None Include="Assets\echoLogin\Shaders\Transparent\echoLogin-transparent-solid-10-fastest.shader" />
      <None Include="Assets\echoLogin\Shaders\Light\echoLogin-light-transparent-22-cutout-discard.shader" />
      <None Include="Assets\echoLogin\Shaders\Light\echoLogin-light-ramp-30-1tex-color-bumpmap.shader" />
@@ -146,6 +147,7 @@
      <None Include="Assets\echoLogin\Shaders\Additive\echoLogin-additive-fx-shield-detail.shader" />
      <None Include="Assets\echoLogin\Shaders\Unlit\echoLogin-unlit-fx-flag.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShift.shader" />
      <None Include="Assets\echoLogin\Shaders\Transparent\echoLogin-transparent-20-color.shader" />
      <None Include="Assets\echoLogin\Shaders\Unlit\echoLogin-unlit-fx-cellblend.shader" />
      <None Include="Assets\echoLogin\Shaders\Unlit\echoLogin-unlit-solid-20-color.shader" />
@@ -187,6 +189,7 @@
      <None Include="Assets\echoLogin\Shaders\Light\echoLogin-light-40-dissolve-togrey.shader" />
      <None Include="Assets\echoLogin\Shaders\Light\echoLogin-light-20-color.shader" />
      <None Include="Assets\echoLogin\Shaders\xcorepass\echoLogin-xcorepass-outline-overlay-rimlit.shader" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
      <None Include="Assets\echoLogin\Shaders\Unlit\echoLogin-unlit-layers-2layer-1tex.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\CutoutVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d_demo\demobmfont\test.fnt" />
@@ -225,6 +228,7 @@
      <None Include="Assets\echoLogin\Shaders\xcorepass\echoLogin-xcorepass-outline-overlay-glow.shader" />
      <None Include="Assets\echoLogin\Shaders\Light\echoLogin-light-transparent-32-dissolve-discard.shader" />
      <None Include="Assets\echoLogin\Shaders\Background\echoLogin-background-layers-2layer-1tex.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectX.shader" />
      <None Include="Assets\echoLogin\Shaders\Additive\echoLogin-additive-20-color.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\AdditiveVertexColor.shader" />
      <None Include="Assets\echoLogin\Shaders\Unlit\echoLogin-unlit-dissolve-20-burn.shader" />

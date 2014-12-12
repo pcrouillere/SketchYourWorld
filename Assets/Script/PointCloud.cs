@@ -27,7 +27,8 @@ public class PointCloud : MonoBehaviour {
 		          ", match score: " + gesture.MatchScore + 
 		          ", match distance: " + gesture.MatchDistance );
 
-		if (gesture.MatchScore>0.40) {
+		if (gesture.MatchScore>0.10) {
+			gameObject.GetComponent<AudioSource>().Play();
 			if (gesture.RecognizedTemplate.name=="Cube") {
 				Debug.Log( "C'est un cube!" );
 				CreateObjectDrawed(myCube);

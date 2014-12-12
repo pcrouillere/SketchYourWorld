@@ -46,16 +46,29 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\BridgeScript.cs" />
-     <Compile Include="Assets\Script\GestureHistory.cs" />
+     <Compile Include="Assets\Script\ExitLevel.cs" />
+     <Compile Include="Assets\Script\FirstPersonnageMvt\MouseLookRazer.cs" />
+     <Compile Include="Assets\Script\FirstPersonnageMvt\Move.cs" />
      <Compile Include="Assets\Script\GlobalManager.cs" />
+     <Compile Include="Assets\Script\Level3\ButtonLevelDone.cs" />
+     <Compile Include="Assets\Script\Level3\CollisionCounter.cs" />
+     <Compile Include="Assets\Script\Level3\CollisionManager.cs" />
+     <Compile Include="Assets\Script\Level4\ExitKey.cs" />
+     <Compile Include="Assets\Script\LostLevel.cs" />
+     <Compile Include="Assets\Script\Menu\ButtonMenuScript.cs" />
+     <Compile Include="Assets\Script\Menu\RayCastRazerMenu.cs" />
      <Compile Include="Assets\Script\MouseInput2.cs" />
-     <Compile Include="Assets\Script\MouseLookRazer.cs" />
-     <Compile Include="Assets\Script\Move.cs" />
      <Compile Include="Assets\Script\OutlineByReference.cs" />
-     <Compile Include="Assets\Script\PanneauScript.cs" />
      <Compile Include="Assets\Script\PointCloud.cs" />
      <Compile Include="Assets\Script\RayCastRazer.cs" />
+     <Compile Include="Assets\Script\Story\BlackHoleRotation.cs" />
+     <Compile Include="Assets\Script\Story\ButtonCallBack.cs" />
+     <Compile Include="Assets\Script\Story\EndTheIntro.cs" />
+     <Compile Include="Assets\Script\Story\GoToHistoire.cs" />
+     <Compile Include="Assets\Script\Story\MagicBoxBehaviour.cs" />
+     <Compile Include="Assets\Script\Template\BridgeScript.cs" />
+     <Compile Include="Assets\Script\Template\Exit.cs" />
+     <Compile Include="Assets\Script\Template\PanneauScript.cs" />
      <Compile Include="Assets\SixenseInput\DemoScenes\Scripts\SixenseHand.cs" />
      <Compile Include="Assets\SixenseInput\DemoScenes\Scripts\SixenseHandsController.cs" />
      <Compile Include="Assets\SixenseInput\DemoScenes\Scripts\SixenseInputTest.cs" />
@@ -151,7 +164,6 @@
      <Compile Include="Assets\echoLogin\SampleProjects\Glow_echoRGBA\Scripts\PulseRGBA.cs" />
      <Compile Include="Assets\echoLogin\SampleProjects\MultiLevelLoadTest\Scripts\Level1.cs" />
      <Compile Include="Assets\echoLogin\SampleProjects\MultiLevelLoadTest\Scripts\Level2.cs" />
-     <Compile Include="Assets\echoLogin\SampleProjects\MultiLevelLoadTest\Scripts\Level3.cs" />
      <Compile Include="Assets\echoLogin\SampleProjects\MultiLevelLoadTest\Scripts\Load.cs" />
      <Compile Include="Assets\echoLogin\SampleProjects\OutlineExample\Scripts\temp.cs" />
      <Compile Include="Assets\echoLogin\SampleProjects\SpaceDemo\Scripts\CameraScript.cs" />
@@ -194,6 +206,7 @@
      <None Include="Assets\echoLogin\Shaders\Transparent\echoLogin-transparent-cutout-12-discard.shader" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
      <None Include="Assets\echoLogin\Shaders\Light\echoLogin-light-transparent-05-additive.shader" />
+     <None Include="Assets\Import\Level4\_Shaders\Highlight.shader" />
      <None Include="Assets\echoLogin\Shaders\Transparent\echoLogin-transparent-solid-10-fastest.shader" />
      <None Include="Assets\echoLogin\Shaders\Light\echoLogin-light-transparent-22-cutout-discard.shader" />
      <None Include="Assets\echoLogin\Shaders\Light\echoLogin-light-ramp-30-1tex-color-bumpmap.shader" />
@@ -240,6 +253,7 @@
      <None Include="Assets\echoLogin\Shaders\Additive\echoLogin-additive-fx-shield-detail.shader" />
      <None Include="Assets\echoLogin\Shaders\Unlit\echoLogin-unlit-fx-flag.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShift.shader" />
      <None Include="Assets\echoLogin\Shaders\Transparent\echoLogin-transparent-20-color.shader" />
      <None Include="Assets\echoLogin\Shaders\Unlit\echoLogin-unlit-fx-cellblend.shader" />
      <None Include="Assets\echoLogin\Shaders\Unlit\echoLogin-unlit-solid-20-color.shader" />
@@ -281,6 +295,7 @@
      <None Include="Assets\echoLogin\Shaders\Light\echoLogin-light-40-dissolve-togrey.shader" />
      <None Include="Assets\echoLogin\Shaders\Light\echoLogin-light-20-color.shader" />
      <None Include="Assets\echoLogin\Shaders\xcorepass\echoLogin-xcorepass-outline-overlay-rimlit.shader" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
      <None Include="Assets\echoLogin\Shaders\Unlit\echoLogin-unlit-layers-2layer-1tex.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\CutoutVertexColor.shader" />
      <None Include="Assets\TK2DROOT\tk2d_demo\demobmfont\test.fnt" />
@@ -319,6 +334,7 @@
      <None Include="Assets\echoLogin\Shaders\xcorepass\echoLogin-xcorepass-outline-overlay-glow.shader" />
      <None Include="Assets\echoLogin\Shaders\Light\echoLogin-light-transparent-32-dissolve-discard.shader" />
      <None Include="Assets\echoLogin\Shaders\Background\echoLogin-background-layers-2layer-1tex.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectX.shader" />
      <None Include="Assets\echoLogin\Shaders\Additive\echoLogin-additive-20-color.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\AdditiveVertexColor.shader" />
      <None Include="Assets\echoLogin\Shaders\Unlit\echoLogin-unlit-dissolve-20-burn.shader" />
