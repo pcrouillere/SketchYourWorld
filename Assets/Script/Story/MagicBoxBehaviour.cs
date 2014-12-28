@@ -13,19 +13,10 @@ public class MagicBoxBehaviour : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		alreadyTouchIt=false;
-		/*theMan = GameObject.Find ("DefaultAvatar");
-		temp = GetComponent<SpriteRenderer>().sprite;
-		BackgroundStory = gameObject.GetComponent<SpriteRenderer> ();
-		mainCamera = GameObject.Find ("Main Camera");
-		blackHole = GameObject.Find ("blackhole");*/
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(theMan.transform.position.z>2.00)
-		{
-			changeCameraView();
-		}
 		if(theMan.transform.position.y<1.37 && !alreadyTouchIt)
 		{
 			alreadyTouchIt=true;
@@ -37,13 +28,7 @@ public class MagicBoxBehaviour : MonoBehaviour {
 		BackgroundStory.gameObject.SetActive(true);
 		blackHole.gameObject.SetActive(true);
 	}
-	
-	void changeCameraView()
-	{
-		/*mainCamera.transform.position.x=2.563259;
-		mainCamera.transform.position.y=3.321495;
-		mainCamera.transform.position.z=2.321495;*/
-	}
+
 }
 
 
