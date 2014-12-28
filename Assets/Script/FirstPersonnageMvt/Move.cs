@@ -4,8 +4,6 @@ using System;
 
 [RequireComponent(typeof(CharacterMotor))]
 public class Move : MonoBehaviour {
-	float speed = 5.0f;
-	float speedRotate = 100.0f;
 	private CharacterMotor motor;
 	
 	// Use this for initialization
@@ -49,40 +47,7 @@ public class Move : MonoBehaviour {
 						// Apply the direction to the CharacterMotor
 						motor.inputMoveDirection = transform.rotation * directionVector;
 						motor.inputJump = SixenseInput.Controllers [1].GetButton (SixenseButtons.THREE);
-
-				} 		
-		//Camera.main.transform.Rotate(Vector3.up * speedRotate *  SixenseInput.Controllers[1].JoystickX  * Time.deltaTime);
-		//Camera.main.transform.Rotate(Vector3.right * speedRotate *  SixenseInput.Controllers[1].JoystickY  * Time.deltaTime);
-		//transform.Rotate(Vector3.up * speedRotate *  SixenseInput.Controllers[1].JoystickX  * Time.deltaTime);
+			} 		
 	}	
 
-			/* Debug.Log("something");	
-			if ( SixenseInput.Controllers[0].GetButtonDown(SixenseButtons.START) ) {
-				Debug.Log("start");
-			}
-			else if ( SixenseInput.Controllers[0].GetButtonDown(SixenseButtons.JOYSTICK) ) {
-				Debug.Log("joystick");
-			}
-			else if ( SixenseInput.Controllers[0].GetButtonDown(SixenseButtons.BUMPER) ) {
-				Debug.Log("bumper");
-			}
-			else if ( SixenseInput.Controllers[0].GetButtonDown(SixenseButtons.ONE) ) {
-				Debug.Log("one");
-			}			
-			else if ( SixenseInput.Controllers[0].GetButtonDown(SixenseButtons.TWO) ) {
-				Debug.Log("2");
-			}			
-			else if ( SixenseInput.Controllers[0].GetButtonDown(SixenseButtons.THREE) ) {
-				Debug.Log("3");
-			}			
-			else if ( SixenseInput.Controllers[0].GetButtonDown(SixenseButtons.FOUR) ) {
-				Debug.Log("4");
-			}
-			else if ( SixenseInput.Controllers[0].GetButtonDown(SixenseButtons.TRIGGER) ) {
-				Debug.Log("trigger");
-			}
-
-			Debug.Log(SixenseInput.Controllers[0].JoystickX); 
-*/
-
-		}
+}

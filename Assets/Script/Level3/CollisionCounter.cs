@@ -4,14 +4,12 @@ using System.Collections;
 public class CollisionCounter : MonoBehaviour {
 	public int counter;
 	private ArrayList buttonList;
-	private bool doneLevel;
 	public GameObject objectExit;
 
 	// Use this for initialization
 	void Start () {
 		counter = 0;
 		buttonList = new ArrayList ();
-		doneLevel = false;
 	}
 	
 	// Update is called once per frame
@@ -23,14 +21,11 @@ public class CollisionCounter : MonoBehaviour {
 	{
 		if(!checkIfButtonExiste(button.name))
 		{
-			//Debug.Log("Boom 1 ");
 			buttonList.Add(button.name);
 			counter++;
 			if(counter==4)
 			{
-				doneLevel=true;
 				objectExit.SetActive(true);
-
 			}
 		}
 	}

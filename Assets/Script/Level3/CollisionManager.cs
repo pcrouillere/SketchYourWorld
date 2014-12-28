@@ -20,7 +20,6 @@ public class CollisionManager : MonoBehaviour {
 	public void OnCollisionEnter(Collision collision)
 	{
 		if (collision.gameObject.tag == "Selectable" && !isCollide) {
-			//if(collision.gameObject.rigidbody.mass >= mass)
 			if(collision.gameObject.transform.position.y> gameObject.transform.position.y)
 			{
 				if (!findCube (collision.gameObject.name)) {
@@ -28,6 +27,7 @@ public class CollisionManager : MonoBehaviour {
 						collisionList.Add (collision.gameObject.name);
 						SendMessageUpwards ("addButtonToTheList", gameObject);
 						translationDown ();
+						GetComponent<AudioSource>().Play();
 				}
 			}
 		} 
@@ -41,11 +41,6 @@ public class CollisionManager : MonoBehaviour {
 				return true;
 		}
 		return false;
-	}
-
-	public void StepSuccedScene()
-	{
-		Debug.Log("Step Succed Scene called");
 	}
 
 	public void translationDown()
