@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_5_5;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_5;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -46,13 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Elf\Script\Elf_Manager.cs" />
-     <Compile Include="Assets\Elf\Script\Manager.cs" />
      <Compile Include="Assets\Import\BIG_Environment_Pack\Atmo_System\AtmoXfade.cs" />
      <Compile Include="Assets\Import\BIG_Environment_Pack\BEP_Standard Assets\Scripts\RenderQueue\SetRenderQueue.cs" />
      <Compile Include="Assets\Import\BIG_Environment_Pack\FX\Fire\Fire\FlickerLight.cs" />
+     <Compile Include="Assets\Import\Elf\Script\Elf_Manager.cs" />
+     <Compile Include="Assets\Import\Elf\Script\Manager.cs" />
      <Compile Include="Assets\Import\Level5\Medieval Environment\Shaders\Desaturate\DesaturateEffect.cs" />
      <Compile Include="Assets\Import\Level5\Medieval Environment\Shaders\TerrainRand.cs" />
+     <Compile Include="Assets\Import\SixenseInput\DemoScenes\Scripts\DrawHand.cs" />
      <Compile Include="Assets\Import\SixenseInput\DemoScenes\Scripts\SixenseHand.cs" />
      <Compile Include="Assets\Import\SixenseInput\DemoScenes\Scripts\SixenseHandsController.cs" />
      <Compile Include="Assets\Import\SixenseInput\DemoScenes\Scripts\SixenseInputTest.cs" />
@@ -181,6 +182,7 @@
      <Compile Include="Assets\Import\echoLogin\SampleProjects\SpaceDemo\Scripts\StatsMain.cs" />
      <Compile Include="Assets\Script\FirstPersonnageMvt\MouseLookRazer.cs" />
      <Compile Include="Assets\Script\FirstPersonnageMvt\Move.cs" />
+     <Compile Include="Assets\Script\GlobalManager\DrawControllerScript.cs" />
      <Compile Include="Assets\Script\GlobalManager\ExitLevel.cs" />
      <Compile Include="Assets\Script\GlobalManager\GlobalManager.cs" />
      <Compile Include="Assets\Script\GlobalManager\LostLevel.cs" />
@@ -195,11 +197,8 @@
      <Compile Include="Assets\Script\Level5\DragCounter.cs" />
      <Compile Include="Assets\Script\Menu\ButtonMenuScript.cs" />
      <Compile Include="Assets\Script\Menu\RayCastRazerMenu.cs" />
-     <Compile Include="Assets\Script\Story\BlackHoleRotation.cs" />
-     <Compile Include="Assets\Script\Story\ButtonCallBack.cs" />
-     <Compile Include="Assets\Script\Story\EndTheIntro.cs" />
-     <Compile Include="Assets\Script\Story\GoToHistoire.cs" />
      <Compile Include="Assets\Script\Story\MagicBoxBehaviour.cs" />
+     <Compile Include="Assets\Script\Story\SwitchToMenu.cs" />
      <Compile Include="Assets\Script\Template\BridgeScript.cs" />
      <Compile Include="Assets\Script\Template\Exit.cs" />
      <Compile Include="Assets\Script\Template\PanneauScript.cs" />
@@ -234,11 +233,9 @@
      <None Include="Assets\Import\Standard assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
      <None Include="Assets\Import\Standard assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
-     <None Include="Assets\Import\Resources\HeightDepthOfField.shader" />
      <None Include="Assets\Import\echoLogin\Shaders\Light\echoLogin-light-transparent-05-additive.shader" />
      <None Include="Assets\Import\Level4\_Shaders\Highlight.shader" />
      <None Include="Assets\Import\echoLogin\Shaders\Transparent\echoLogin-transparent-solid-10-fastest.shader" />
-     <None Include="Assets\Import\Resources\BlurPassesForDof.shader" />
      <None Include="Assets\Import\echoLogin\Shaders\Light\echoLogin-light-transparent-22-cutout-discard.shader" />
      <None Include="Assets\Import\Standard assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlur.shader" />
      <None Include="Assets\Import\echoLogin\Shaders\Light\echoLogin-light-ramp-30-1tex-color-bumpmap.shader" />
@@ -283,14 +280,13 @@
      <None Include="Assets\Import\echoLogin\Shaders\Light\echoLogin-light-reflective-20-2Layer-2Tex.shader" />
      <None Include="Assets\Import\echoLogin\Shaders\Light\echoLogin-light-ramp-00-solid-color.shader" />
      <None Include="Assets\Import\echoLogin\Shaders\Unlit\echoLogin-unlit-layers-3layer-1tex.shader" />
-     <None Include="Assets\Baker House\Readme.txt" />
+     <None Include="Assets\Import\Baker House\Readme.txt" />
      <None Include="Assets\Import\echoLogin\Shaders\Unlit\echoLogin-unlit-cutout-discard.shader" />
      <None Include="Assets\Import\echoLogin\Shaders\Unlit\echoLogin-unlit-dissolve-00-togrey.shader" />
      <None Include="Assets\Import\TK2DROOT\tk2dUI_demo\Assets\Dark\Fonts\Nunito24.fnt" />
      <None Include="Assets\Import\echoLogin\Shaders\Unlit\echoLogin-unlit-dissolve-21-burn-zwrite.shader" />
      <None Include="Assets\Import\echoLogin\Shaders\Transparent\echoLogin-transparent-fx-water.shader" />
      <None Include="Assets\Import\echoLogin\Shaders\Additive\echoLogin-additive-fx-rimlit-1color.shader" />
-     <None Include="Assets\Import\Resources\ColoredNoise.shader" />
      <None Include="Assets\Import\echoLogin\Shaders\GUI\echoLogin-gui-unlit.shader" />
      <None Include="Assets\Import\echoLogin\Shaders\Additive\echoLogin-additive-fx-shield-detail.shader" />
      <None Include="Assets\Import\echoLogin\Shaders\Unlit\echoLogin-unlit-fx-flag.shader" />
@@ -308,7 +304,6 @@
      <None Include="Assets\Import\echoLogin\Shaders\Light\echoLogin-light-transparent-41-dissolve-burn-zwrite.shader" />
      <None Include="Assets\Import\Standard assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
      <None Include="Assets\Import\Standard assets\Image Effects (Pro Only)\_Sources\Shaders\ConvertDepth.shader" />
-     <None Include="Assets\Import\Resources\MobileBloom.shader" />
      <None Include="Assets\Import\echoLogin\Shaders\Background\echoLogin-background-20-color.shader" />
      <None Include="Assets\Import\Standard assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurvesSimple.shader" />
      <None Include="Assets\Import\Standard assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderYUV.shader" />

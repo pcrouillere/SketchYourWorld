@@ -157,7 +157,7 @@ ModelImporter:
     400148: Spine
     400150: TongueBack
     400152: TongueTip
-    7400000: GetStarted
+    7400000: Idle_JumpUpMedium_NoHands1Step_Idle
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -176,7 +176,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: GetStarted
+      name: Idle_JumpUpMedium_NoHands1Step_Idle
       takeName: _207_Idle_JumpUpMedium_NoHands1Step_Idle
       firstFrame: 56
       lastFrame: 233

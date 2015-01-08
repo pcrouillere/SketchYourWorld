@@ -38,6 +38,10 @@ public class GlobalManager : MonoBehaviour {
 			}
 		
 		}
+		if (SixenseInput.Controllers [1].GetButtonDown (SixenseButtons.FOUR)) {
+			Application.LoadLevel("Menu");
+			
+		}
 	}
 
 

@@ -44,7 +44,7 @@ public class RayCastRazerMenu : MonoBehaviour {
 	
 	void ClickOnButton(){
 		string levelToLoad = onButton.GetComponent<ButtonMenuScript> ().levelToLoad;
-		if(SixenseInput.Controllers[0].GetButtonDown(SixenseButtons.TRIGGER)) {
+		if(SixenseInput.Controllers[0].GetButtonDown(SixenseButtons.BUMPER)) {
 			Application.LoadLevel(levelToLoad);
 		}
 	}

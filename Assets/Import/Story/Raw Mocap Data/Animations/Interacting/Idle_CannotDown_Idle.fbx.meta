@@ -157,7 +157,7 @@ ModelImporter:
     400148: Spine
     400150: TongueBack
     400152: TongueTip
-    7400000: LookDown
+    7400000: Idle_CannotDown_Idle
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -176,10 +176,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: LookDown
+      name: Idle_CannotDown_Idle
       takeName: _192_Idle_CannotDown_Idle
       firstFrame: 50
-      lastFrame: 194
+      lastFrame: 173
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
