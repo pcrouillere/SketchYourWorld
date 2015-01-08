@@ -157,7 +157,7 @@ ModelImporter:
     400148: Spine
     400150: TongueBack
     400152: TongueTip
-    7400000: MoveOn
+    7400000: HalfSteps2Idle_IdleTOShortStepfwdTOIdle
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -176,16 +176,16 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: MoveOn
+      name: HalfSteps2Idle_IdleTOShortStepfwdTOIdle
       takeName: _89_90_a_U1_M_P_halfSteps2Idle_IdleTOShortStepfwdTOIdle_Fb_p0_No_0_1
-      firstFrame: 88
-      lastFrame: 137
+      firstFrame: 75
+      lastFrame: 140
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
-      cycleOffset: 10
+      cycleOffset: 0
       loop: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -198,161 +198,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Reference
-        weight: 1
-      - path: Reference/Hips
-        weight: 1
-      - path: Reference/Hips/LeftUpLeg
-        weight: 1
-      - path: Reference/Hips/LeftUpLeg/LeftLeg
-        weight: 1
-      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
-        weight: 1
-      - path: Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToes
-        weight: 1
-      - path: Reference/Hips/RightUpLeg
-        weight: 1
-      - path: Reference/Hips/RightUpLeg/RightLeg
-        weight: 1
-      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot
-        weight: 1
-      - path: Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToes
-        weight: 1
-      - path: Reference/Hips/Spine
-        weight: 1
-      - path: Reference/Hips/Spine/Chest
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/Jaw
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/Jaw/JawEND
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/Jaw/LeftLipCorner
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/Jaw/LeftLipLower
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/Jaw/RightLipCorner
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/Jaw/RightLipLower
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/Jaw/TongueBack
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/Jaw/TongueTip
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/LeftCheek
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/LeftEye
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/LeftEyelidLower
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/LeftEyelidUpper
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/LeftInnerBrow
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/LeftIOuterBrow
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/LeftLipUpper
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/LeftNostril
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/RightCheek
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/RightEye
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/RightEyelidLower
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/RightEyelidUpper
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/RightInnerBrow
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/RightIOuterBrow
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/RightLipUpper
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/Neck/Head/RightNostril
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2
-        weight: 1
-      - path: Reference/Hips/Spine/Chest/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
-        weight: 1
+      transformMask: []
       maskType: 0
       maskSource: {instanceID: 0}
     isReadable: 1

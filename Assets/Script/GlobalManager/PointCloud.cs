@@ -7,6 +7,8 @@ public class PointCloud : MonoBehaviour {
 	public GameObject myBridge;
 	public GameObject myPipe;
 	public GameObject mynewHouse;
+	public GameObject myRock;
+	public GameObject myGrass;
 	public GameObject placeObject;
 	public bool hover=false;
 	[HideInInspector]public static PointCloud gPointCloud;
@@ -29,7 +31,7 @@ public class PointCloud : MonoBehaviour {
 		          ", match score: " + gesture.MatchScore + 
 		          ", match distance: " + gesture.MatchDistance );
 
-		if (gesture.MatchScore>0.10) {
+		if (gesture.MatchScore>0.05) {
 			gameObject.GetComponent<AudioSource>().Play();
 			if (gesture.RecognizedTemplate.name=="Cube") {
 				Debug.Log( "C'est un cube!" );
@@ -41,16 +43,25 @@ public class PointCloud : MonoBehaviour {
 				CreateObjectDrawed(myBridge);
 
 			}
-			Debug.Log (Application.loadedLevelName);
 			if (Application.loadedLevelName=="YourWorld") {
 				if (gesture.RecognizedTemplate.name=="Maison") {
-					Debug.Log( "C'est un pont!" );
+					Debug.Log( "C'est une Maison!" );
 					CreateObjectDrawed(mynewHouse);
 					
 				}
 				if (gesture.RecognizedTemplate.name=="Pipe") {
-					Debug.Log( "C'est un pont!" );
+					Debug.Log( "C'est un pipe!" );
 					CreateObjectDrawed(myPipe);
+					
+				}
+				if (gesture.RecognizedTemplate.name=="Rock") {
+					Debug.Log( "C'est un rock!" );
+					CreateObjectDrawed(myRock);
+					
+				}
+				if (gesture.RecognizedTemplate.name=="Grass") {
+					Debug.Log( "C'est un rock!" );
+					CreateObjectDrawed(myGrass);
 					
 				}
 			}

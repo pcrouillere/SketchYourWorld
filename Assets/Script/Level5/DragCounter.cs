@@ -13,7 +13,7 @@ public class DragCounter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (DragCount == 6) {
-			Application.LoadLevel("End");	
+			Application.LoadLevel("YourWorld");	
 				}
 	}
 

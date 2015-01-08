@@ -157,7 +157,7 @@ ModelImporter:
     400148: Spine
     400150: TongueBack
     400152: TongueTip
-    7400000: WalkAwat
+    7400000: WalkAvoid_ToLeft_Both
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -176,10 +176,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: WalkAwat
+      name: WalkAvoid_ToLeft_Both
       takeName: _3_a_U1_M_P_WalkAvoid_ToLeft_Both_Fb_p0_No_0_1
       firstFrame: 251
-      lastFrame: 412
+      lastFrame: 410
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

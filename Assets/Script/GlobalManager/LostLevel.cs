@@ -30,6 +30,12 @@ public class LostLevel : MonoBehaviour {
 			}
 			
 		}
+		if (collision.gameObject.tag == "ExitKey") {
+			if(!gameObject.GetComponent<AudioSource>().isPlaying) {
+				StartCoroutine(playEndLevel(collision));
+			}
+			
+		}
 		if (collision.gameObject.tag == "Die") {
 			if(!gameObject.GetComponent<AudioSource>().isPlaying) {
 				StartCoroutine(playLoseLevel());
